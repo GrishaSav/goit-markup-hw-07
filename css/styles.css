@@ -1,0 +1,136 @@
+:root {
+  --primary-brand-color: #4d5ae5;
+  --dark-color: #2e2f42;
+  --text-color: #434455;
+  --accent-color: #e7e9fc;
+  --light-color: #f4f4fd;
+  --white-color: #fff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* header styles */
+.logo-web {
+  color: var(--primary-brand-color);
+}
+
+.logo-studio {
+  font-family: "Raleway", sans-serif;
+  color: var(--dark-color);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+}
+
+.navigation {
+  color: var(--dark-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.navigation:hover,
+.navigation:focus {
+  color: var(--primary-brand-color);
+}
+
+.contacts {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--primary-brand-color);
+}
+
+/* footer styles */
+.footer {
+  background-color: var(--dark-color);
+}
+
+.footer > .logo-studio {
+  color: var(--light-color);
+}
+
+.footer-text {
+  color: var(--accent-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* main styles */
+
+.order-button {
+  color: var(--white-color);
+  background-color: var(--primary-brand-color);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.04em;
+}
+
+.filter-button {
+  color: var(--primary-brand-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--white-color);
+  background-color: var(--primary-brand-color);
+}
+
+.hero-section {
+  background-color: var(--dark-color);
+  text-align: center;
+}
+
+.header-one {
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+.header-two {
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.header-three {
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.list {
+  list-style: none;
+}
+
+.our-team {
+  background-color: var(--light-color);
+}
