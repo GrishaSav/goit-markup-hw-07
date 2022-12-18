@@ -252,6 +252,12 @@ p {
   text-align: center;
 }
 
+.team-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* portfolio styles */
 
 /* filter button styles */
