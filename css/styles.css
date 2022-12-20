@@ -227,6 +227,12 @@ p {
   margin-right: 24px;
 }
 
+.exemples-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* our team */
 
 .our-team {
