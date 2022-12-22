@@ -416,7 +416,6 @@ p {
 .customers-button:hover,
 .customers-button:focus {
   border: 1px solid var(--pressed-state);
-  fill: var(--pressed-state);
 }
 
 .customers-icon {
