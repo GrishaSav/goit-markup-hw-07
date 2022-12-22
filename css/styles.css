@@ -7,6 +7,7 @@
   --white-color: #fff;
   --succes-color: #31D0AA;
   --subtle-text: #8E8F99;
+  --pressed-state: #404BBF;
 }
 
 svg {
@@ -252,6 +253,11 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.order-button:hover,
+.order-button:focus {
+  background-color: var(--pressed-state);
+}
+
 .overlay {
   max-width: 1440px;
   height: 600px;
@@ -291,8 +297,8 @@ p {
 .services-icon {
   width: 64px;
   height: 64px;
+  margin-right:auto;
   margin-left: auto;
-  margin-right: auto;
 }
 
 /* what are we doing */
@@ -364,6 +370,11 @@ p {
     background-size: contain;
 }
 
+.team-button:hover,
+.team-button:focus {
+  color: var(--pressed-state);
+}
+
 .team-content .button-icon{
   width: 16px;
   height: 16px;
@@ -396,12 +407,6 @@ p {
   height: 88px;
   border-radius: 4px;
   border: 1px solid var(--subtle-text);
-}
-
-.customers-icon .icon {
-  width: 104px;
-  height: 56px;
-  padding: 32px 16px;
 }
 
 /* portfolio styles */
