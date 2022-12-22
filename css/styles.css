@@ -166,7 +166,7 @@ p {
   margin-left: 120px;
 }
 
-.social-list .item {
+.footer-social .item {
   margin-right: 16px;
 }
 
@@ -189,7 +189,8 @@ p {
 .footer-button .button-icon {
   width: 24px;
   height: 24px;
-  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* headers styles */
@@ -280,16 +281,20 @@ p {
   width: 264px;
 }
 
-.services-icon {
+.services-table {
   background-color: var(--light-color);
   width: 264px;
   height: 112px;
   border-radius: 4px;
 }
 
-.services-icon .icon {
-  position: center;
+.services-icon {
+  width: 64px;
+  height: 64px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 /* what are we doing */
 .main-exemples {
   padding-bottom: 120px;
@@ -341,6 +346,33 @@ p {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.team-content .social-list {
+  margin-top: 12px;
+  margin-left: 16px;
+}
+
+.team-button {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-brand-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-size: contain;
+}
+
+.team-content .button-icon{
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-content .item:not(:last-child) {
+  margin-right: 24px;
 }
 
 /* customers */
