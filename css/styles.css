@@ -5,6 +5,7 @@
   --accent-color: #e7e9fc;
   --light-color: #f4f4fd;
   --white-color: #fff;
+  --succes-color: #31D0AA;
 }
 
 body {
@@ -173,9 +174,14 @@ p {
   border-radius: 40px;
 }
 
+.footer-button:hover
+.footer-button:focus {
+  background-color: var(--succes-color);
+}
+
 .button-icon {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
 }
 
 /* headers styles */
