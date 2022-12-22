@@ -367,6 +367,11 @@ p {
   border: 1px solid var(--subtle-text);
 }
 
+.customers-icon .icon {
+  width: 104px;
+  height: 56px;
+}
+
 /* portfolio styles */
 .filter {
   padding-top: 96px;
