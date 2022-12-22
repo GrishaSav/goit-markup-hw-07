@@ -6,6 +6,11 @@
   --light-color: #f4f4fd;
   --white-color: #fff;
   --succes-color: #31D0AA;
+  --subtle-text: #8E8F99;
+}
+
+svg {
+  display: block;
 }
 
 body {
@@ -337,6 +342,29 @@ p {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/* customers */
+
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-list {
+  display: flex;
+  margin-top: 72px;
+}
+
+.customers-list .item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.customers-icon {
+  width: 168px;
+  height: 88px;
+  border-radius: 4px;
+  border: 1px solid var(--subtle-text);
 }
 
 /* portfolio styles */
