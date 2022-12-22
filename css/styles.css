@@ -182,7 +182,11 @@ p {
 .button-icon {
   width: 24px;
   height: 24px;
-  background-position: 50% 50%;
+  position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+    bottom: 20%;
 }
 
 /* headers styles */
