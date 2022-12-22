@@ -276,6 +276,13 @@ p {
   width: 264px;
 }
 
+.services-icon {
+  background-color: var(--light-color);
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+}
+
 /* what are we doing */
 .main-exemples {
   padding-bottom: 120px;
