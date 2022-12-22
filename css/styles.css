@@ -166,12 +166,14 @@ p {
 }
 
 .footer-button {
+  padding: 0;
   width: 40px;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   border: none;
-  border-radius: 40px;
+  border-radius: 50%;
+  background-size: contain;
 }
 
 .footer-button:hover,
@@ -179,14 +181,11 @@ p {
   background-color: var(--succes-color);
 }
 
-.button-icon {
+.footer-button .button-icon {
   width: 24px;
   height: 24px;
-  position: absolute;
-    left: 20%;
-    right: 20%;
-    top: 20%;
-    bottom: 20%;
+  background-position: 50% 50%;
+  background-size: contain;
 }
 
 /* headers styles */
