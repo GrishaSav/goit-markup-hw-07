@@ -369,7 +369,6 @@ p {
   cursor: pointer;
   border: none;
   border-radius: 50%;
-  background-size: contain;
 }
 
 .team-button:hover,
@@ -412,7 +411,6 @@ p {
   border-radius: 4px;
   border: 1px solid var(--subtle-text);
   background-color: var(--white-color);
-  background-size: contain;
 }
 
 .customers-button:hover,
