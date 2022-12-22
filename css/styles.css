@@ -411,11 +411,13 @@ p {
   border-radius: 4px;
   border: 1px solid var(--subtle-text);
   background-color: var(--white-color);
+  fill: #8e8f99;
 }
 
 .customers-button:hover,
 .customers-button:focus {
   border: 1px solid var(--pressed-state);
+  fill: var(--pressed-state);
 }
 
 .customers-icon {
