@@ -47,6 +47,7 @@ p {
 /* header styles */
 .header {
   border-bottom: 1px solid var(--light-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .nav-contacts,
@@ -138,6 +139,45 @@ p {
   letter-spacing: 0.02em;
 }
 
+.footer .header-three {
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.social-list {
+  display: flex;
+}
+
+.footer-content {
+  display: flex;
+}
+
+.footer-social {
+  margin-left: 120px;
+}
+
+.social-list .item {
+  margin-right: 16px;
+}
+
+.footer-button {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+}
+
+.button-icon {
+  width: 40px;
+  height: 40px;
+}
+
 /* headers styles */
 
 .header-one {
@@ -194,6 +234,18 @@ p {
   line-height: 1.18;
   letter-spacing: 0.04em;
   border: 1px solid var(--primary-brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.overlay {
+  max-width: 1440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* services styles */
@@ -258,6 +310,7 @@ p {
   padding-bottom: 32px;
   background-color: var(--white-color);
   text-align: center;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .team-img {
@@ -302,6 +355,7 @@ p {
   color: var(--white-color);
   background-color: var(--primary-brand-color);
   border: 1px solid var(--primary-brand-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* filter list styles */
 
@@ -329,4 +383,14 @@ p {
   border-bottom: 1px solid var(--light-color);
   border-right: 1px solid var(--light-color);
   border-left: 1px solid var(--light-color);
+}
+
+.filter-list .item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.filter-list
+.item:hover,
+.item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
