@@ -287,7 +287,7 @@ p {
   width: 264px;
 }
 
-.services-table {
+.services-icon {
   background-color: var(--light-color);
   width: 264px;
   height: 112px;
@@ -295,7 +295,7 @@ p {
   margin-bottom: 8px;
 }
 
-.services-icon {
+.icon {
   width: 64px;
   height: 64px;
   margin-right:auto;
