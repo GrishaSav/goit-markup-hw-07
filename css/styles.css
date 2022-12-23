@@ -295,9 +295,7 @@ p {
   margin-bottom: 8px;
 }
 
-.icon {
-  width: 64px;
-  height: 64px;
+.services-icon .icon {
   margin-right:auto;
   margin-left: auto;
   margin-top: 24px;
