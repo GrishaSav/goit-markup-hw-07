@@ -95,12 +95,13 @@ p {
 }
 
 .navigation-list .current-page::after {
-  position: absolute;
+  content: "";
+  display: block;
+  position: relative;
   height: 4px;
   width: 100%;
-  content: "";
+  top: 25px;
   left: 0;
-  bottom: 0;
   background-color: var(--pressed-state);
   border-radius: 2px;
 }
