@@ -69,6 +69,68 @@
                 <use href="./images/icons.svg#icon-X"></use>
               </svg>
             </button>
+
+            <form class="modal-form" action="order-form">
+              <h3 class="header-modal">
+                Leave your contacts and we will call you back
+              </h3>
+
+              <label class="modal-text form-field" for="name">Name</label>
+              <div class="form-thumb">
+                <input type="text" name="name" id="name" placeholder=" " />
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+
+              <label class="modal-text form-field" for="phone">Phone</label>
+              <div class="form-thumb">
+                <input type="tel" name="phone" id="phone" placeholder=" " />
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+
+              <label class="modal-text form-field" for="email">Email</label>
+              <div class="form-thumb">
+                <input type="email" name="email" id="email" placeholder=" " />
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+
+              <div class="form-field">
+                <label class="modal-text form-field" for="comment"
+                  >Comment</label
+                >
+                <textarea
+                  name="comment"
+                  id="comment"
+                  placeholder="Text input"
+                ></textarea>
+              </div>
+
+              <label class="modal-text checkbox-label" for="checkbox">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="checkbox"
+                  id="checkbox"
+                />
+                <div class="checkbox-background">
+                  <svg class="checkbox-icon">
+                    <use href="./images/icons.svg#icon-mark"></use>
+                  </svg>
+                </div>
+                I accept the terms and conditions of the&nbsp;<a
+                  class="checkbox-link"
+                  href=""
+                  >Privacy Policy</a
+                >
+              </label>
+
+              <button class="form-button" type="submit">Send</button>
+            </form>
           </div>
         </div>
       </section>
@@ -437,6 +499,27 @@
               </button>
             </li>
           </ul>
+        </div>
+        <div class="subscribe-form">
+          <form action="subscribe-email-form">
+            <div class="subscribe-thumb">
+              <div class="subscribe-field">
+                <label class="header-three" for="mail">Subscribe</label>
+                <input
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  placeholder="E-mail"
+                />
+              </div>
+              <button class="subscribe-button" type="submit">
+                Subscribe
+                <svg class="button-icon">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
