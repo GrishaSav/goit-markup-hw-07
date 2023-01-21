@@ -21,15 +21,24 @@
     <!--Header-->
     <header class="header">
       <div class="container nav-contacts">
-        <nav class="site-nav">
+        <div class="mobile-header">
           <a href="./index.html" class="logo-web link"
-            >Web <span class="logo-studio">Studio</span></a
+            >Web<span class="logo-studio">Studio</span></a
           >
+          <button type="button" class="menu-button" aria-expanded="true" aria-controls="menu-container" data-menu-button>
+            <svg class="icon-menu">
+              <use class="icon-hamburger" href="./images/icons.svg#icon-menu"></use>
+              <use class="icon-cross" href="./images/icons.svg#icon-X"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="menu-container" id="menu-container" data-menu>
+          <div class="nav-cont">
+          <nav class="site-nav">
           <ul class="list navigation-list">
-            <li class="item">
-              <a href="./index.html" class="navigation link current-page"
-                >Studio</a
-              >
+            <li class="item" aria-label="mobile menu switch">
+              <a href="./index.html" class="navigation link current-page">Studio</a>
             </li>
             <li class="item">
               <a href="./portfolio.html" class="navigation link">Portfolio</a>
@@ -38,19 +47,47 @@
               <a href="" class="navigation link">Contacts</a>
             </li>
           </ul>
-        </nav>
-        <ul class="list site-contacts">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="contacts link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a href="tel:+110001111111" class="contacts link"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
+          </nav>
+          <ul class="list site-contacts">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="contacts link">info@devstudio.com</a>
+            </li>
+            <li class="item">
+              <a href="tel:+110001111111" class="contacts link">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+          </div>
+          <ul class="list menu-list">
+            <li class="button-item">
+              <button type="button" class="social-button">
+                <svg class="button-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="social-button">
+                <svg class="button-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="social-button">
+                <svg class="button-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="social-button">
+                <svg class="button-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--main-->
@@ -181,7 +218,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="header-three">Tech</h3>
+              <h3 class="header-three">Technologies</h3>
               <p>
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -225,43 +262,48 @@
       </section>
       <!--Our Team-->
       <section class="our-team">
-        <div class="container">
+        <div class="container container-tablet">
           <h2 class="header-two">Our Team</h2>
           <ul class="list team-list">
             <li class="item">
               <img
                 class="team-img"
-                src="./images/img1.jpg"
+                srcset="
+                ./images/team1-1x.jpg 1x,
+                ./images/team1-2x.jpg 2x,
+                ./images/team1-3x.jpg 3x
+                "
+                src="./images/team1-1x.jpg"
                 width="264"
-                height="260"
-                alt="man"
+                
+                alt="Mark Guerreros photo"
               />
               <div class="team-content">
                 <h3 class="header-three">Mark Guerrero</h3>
                 <p>Product Designer</p>
                 <ul class="list social-list">
-                  <li class="item">
+                  <li class="button-item">
                     <button type="button" class="team-button">
                       <svg class="button-icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </button>
                   </li>
-                  <li class="item">
+                  <li class="button-item">
                     <button type="button" class="team-button">
                       <svg class="button-icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </button>
                   </li>
-                  <li class="item">
+                  <li class="button-item">
                     <button type="button" class="team-button">
                       <svg class="button-icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </button>
                   </li>
-                  <li class="item">
+                  <li class="button-item">
                     <button type="button" class="team-button">
                       <svg class="button-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -274,37 +316,42 @@
             <li class="item">
               <img
                 class="team-img"
-                src="./images/img2.jpg"
+                srcset="
+                ./images/team2-1x.jpg 1x,
+                ./images/team2-2x.jpg 2x,
+                ./images/team2-3x.jpg 3x
+                "
+                src="./images/team2-1x.jpg"
                 width="264"
                 height="260"
-                alt="man"
+                alt="Tom Fords photo"
               />
               <div class="team-content">
                 <h3 class="header-three">Tom Ford</h3>
                 <p>Frontend Developer</p>
                 <ul class="list social-list">
-                  <li class="item">
+                  <li class="button-item">
                     <button type="button" class="team-button">
                       <svg class="button-icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </button>
                   </li>
-                  <li class="item">
+                  <li class="button-item">
                     <button type="button" class="team-button">
                       <svg class="button-icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </button>
                   </li>
-                  <li class="item">
+                  <li class="button-item">
                     <button type="button" class="team-button">
                       <svg class="button-icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </button>
                   </li>
-                  <li class="item">
+                  <li class="button-item">
                     <button type="button" class="team-button">
                       <svg class="button-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -318,37 +365,42 @@
             <li class="item">
               <img
                 class="team-img"
-                src="./images/img3.jpg"
+                srcset="
+                ./images/team3-1x.jpg 1x,
+                ./images/team3-2x.jpg 2x,
+                ./images/team3-3x.jpg 3x
+                "
+                src="./images/team3-1x.jpg"
                 width="264"
                 height="260"
-                alt="woman"
+                alt="Camila Garcias photo"
               />
               <div class="team-content">
                 <h3 class="header-three">Camila Garcia</h3>
                 <p>Marketing</p>
                 <ul class="list social-list">
-                  <li class="item">
+                  <li class="button-item">
                     <button type="button" class="team-button">
                       <svg class="button-icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </button>
                   </li>
-                  <li class="item">
+                  <li class="button-item">
                     <button type="button" class="team-button">
                       <svg class="button-icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </button>
                   </li>
-                  <li class="item">
+                  <li class="button-item">
                     <button type="button" class="team-button">
                       <svg class="button-icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </button>
                   </li>
-                  <li class="item">
+                  <li class="button-item">
                     <button type="button" class="team-button">
                       <svg class="button-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -361,37 +413,42 @@
             <li class="item">
               <img
                 class="team-img"
-                src="./images/img4.jpg"
+                srcset="
+                ./images/team4-1x.jpg 1x,
+                ./images/team4-2x.jpg 2x,
+                ./images/team4-3x.jpg 3x
+                "
+                src="./images/team4-1x.jpg"
                 width="264"
                 height="260"
-                alt="man"
+                alt="Daniel Wilsons photo"
               />
               <div class="team-content">
                 <h3 class="header-three">Daniel Wilson</h3>
                 <p>UI Designer</p>
                 <ul class="list social-list">
-                  <li class="item">
+                  <li class="button-item">
                     <button type="button" class="team-button">
                       <svg class="button-icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </button>
                   </li>
-                  <li class="item">
+                  <li class="button-item">
                     <button type="button" class="team-button">
                       <svg class="button-icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </button>
                   </li>
-                  <li class="item">
+                  <li class="button-item">
                     <button type="button" class="team-button">
                       <svg class="button-icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </button>
                   </li>
-                  <li class="item">
+                  <li class="button-item">
                     <button type="button" class="team-button">
                       <svg class="button-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -406,7 +463,7 @@
       </section>
       <!-- Customers -->
       <section class="customers">
-        <div class="container">
+        <div class="container container-tablet">
           <h2 class="header-two">Customers</h2>
           <ul class="list customers-list">
             <li class="item">
@@ -457,10 +514,11 @@
     </main>
     <!--footer-->
     <footer class="footer main-footer">
-      <div class="container footer-content">
+      <div class="container footer-content container-tablet">
+        <div class="footer-tablet">
         <div>
           <a href="./index.html" class="logo-web link"
-            >Web <span class="logo-studio">Studio</span></a
+            >Web<span class="logo-studio">Studio</span></a
           >
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
@@ -500,6 +558,7 @@
             </li>
           </ul>
         </div>
+        </div>
         <div class="subscribe-form">
           <form action="subscribe-email-form">
             <div class="subscribe-thumb">
@@ -523,6 +582,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
