@@ -24,7 +24,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.modal-open{
+.modal-open {
   overflow: hidden;
 }
 
@@ -59,7 +59,6 @@ p {
 
 /* header styles */
 .header {
-  
   border-bottom: 1px solid var(--light-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -153,18 +152,17 @@ p {
   padding: 0;
   top: 0;
   right: 0;
-  
+
   margin-top: 24px;
   margin-right: 24px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  
+
   background-color: var(--accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   fill: var(--black-color);
   cursor: pointer;
-  
 }
 
 .menu-button.is-open:active {
@@ -212,10 +210,10 @@ p {
   width: 100%;
 
   padding: 80px 40px 40px 40px;
-  
+
   background-color: var(--white-color);
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .menu-container.is-open {
@@ -233,7 +231,7 @@ p {
 }
 
 .menu-list .social-button {
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   padding: 0;
   width: 40px;
@@ -346,7 +344,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 8px 16px;
   margin-left: auto;
   margin-right: auto;
-  
+
   background-color: var(--dark-color);
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -484,21 +482,25 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .overlay {
   max-width: 428px;
-  background-image: linear-gradient(to right,
+  background-image: linear-gradient(
+      to right,
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(../images/people-office3-1x.jpg);
   background-size: 428px 432px;
   background-repeat: no-repeat;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
   .overlay {
-    background-image: linear-gradient(to right,
+    background-image: linear-gradient(
+        to right,
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
+        rgba(46, 47, 66, 0.7)
+      ),
       url(../images/people-office3-2x.jpg);
   }
 }
@@ -527,7 +529,7 @@ screen and (min-resolution: 2dppx) {
 
 /* what are we doing */
 .main-exemples {
-  display: none; 
+  display: none;
 }
 
 /* our team */
@@ -541,7 +543,6 @@ screen and (min-resolution: 2dppx) {
 .team-list .item {
   margin-top: 72px;
 }
-
 
 .team-content {
   max-width: 264px;
@@ -571,7 +572,7 @@ screen and (min-resolution: 2dppx) {
   padding-left: 16px;
   padding-right: 16px;
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .team-button {
@@ -622,15 +623,15 @@ screen and (min-resolution: 2dppx) {
   margin-bottom: 72px;
 }
 
-@media screen and (max-width:366px) {
+@media screen and (max-width: 366px) {
   .customers-list .item:last-child {
-      margin-top: 72px;
-    }
+    margin-top: 72px;
+  }
 }
 
 .customers-list .item:nth-last-child(-n + 2) {
   margin-bottom: 0;
-} 
+}
 
 .customers-button {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -682,9 +683,9 @@ screen and (min-resolution: 2dppx) {
   margin-bottom: 16px;
 }
 
-@media screen and (max-width:230px) {
+@media screen and (max-width: 230px) {
   .filter-button .item:last-child {
-  margin-top: 16px;
+    margin-top: 16px;
   }
 }
 
@@ -1086,15 +1087,15 @@ textarea {
   }
 
   .menu-container {
-  display: block;
-  display: flex;
-  flex-direction: row;
-  
-  position: relative;
-  padding: 0;
-    
-  background-color: transparent;
-  box-shadow: none;
+    display: block;
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+    padding: 0;
+
+    background-color: transparent;
+    box-shadow: none;
   }
 
   .menu-container .menu-list {
@@ -1207,7 +1208,7 @@ textarea {
   }
 
   .subscribe-form .subscribe-field input {
-  width: 264px;
+    width: 264px;
   }
 
   .subscribe-form {
@@ -1245,27 +1246,30 @@ textarea {
     letter-spacing: 0.02em;
   }
 
-   .overlay {
-   max-width: 768px;
-   height: 436px;
+  .overlay {
+    max-width: 768px;
+    height: 436px;
 
-   background-image: linear-gradient(to right,
-       rgba(46, 47, 66, 0.7),
-       rgba(46, 47, 66, 0.7)),
-     url(../images/people-office2-1x.jpg);
-   background-size: 768px 436px;
- }
-
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) { 
-    .overlay {
     background-image: linear-gradient(
-      to right,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
-      url(../images/people-office2-2x.jpg);
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office2-1x.jpg);
+    background-size: 768px 436px;
   }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office2-2x.jpg);
+    }
   }
 
   .services {
@@ -1288,7 +1292,7 @@ textarea {
   }
 
   .services-list .item:not(:last-child) {
-  margin-bottom: 0;
+    margin-bottom: 0;
   }
 
   .services-list .item:nth-child(-n + 2) {
@@ -1303,8 +1307,8 @@ textarea {
   }
 
   .team-list .item {
-  margin-top: 0;
-}
+    margin-top: 0;
+  }
 
   .team-list .item:nth-child(-n + 2) {
     margin-bottom: 64px;
@@ -1318,8 +1322,8 @@ textarea {
   }
 
   .customers-list .item:nth-child(2n) {
-  margin-left: 0;
-  margin-bottom: 0;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 
   .customers-list .item:nth-child(3n + 2) {
@@ -1332,30 +1336,30 @@ textarea {
   }
 
   .filter {
-  padding-top: 64px;
-  padding-bottom: 96px;
+    padding-top: 64px;
+    padding-bottom: 96px;
   }
 
   .filter-button {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 72px;
-  max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+    max-width: 100%;
   }
 
   .filter-button .item:not(:last-child) {
-  margin-right: 24px;
+    margin-right: 24px;
   }
 
   .filter-button .button {
-  padding: 12px 24px;
+    padding: 12px 24px;
   }
 
   .filter-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -24px;
-  margin-top: -72px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -24px;
+    margin-top: -72px;
   }
 
   .filter-list .item {
@@ -1365,7 +1369,10 @@ textarea {
   }
 
   .modal {
-    margin-top: 26px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%) scale(1);
   }
 }
 
@@ -1563,22 +1570,26 @@ textarea {
   }
 
   .overlay {
-  max-width: 1440px;
-  height: 600px;
-  background-image: linear-gradient(to right,
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)),
-    url(../images/people-office1-1x.jpg);
-  background-size: 1440px 600px;
+    max-width: 1440px;
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office1-1x.jpg);
+    background-size: 1440px 600px;
   }
-  
+
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     .overlay {
-      background-image: linear-gradient(to right,
+      background-image: linear-gradient(
+          to right,
           rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
+          rgba(46, 47, 66, 0.7)
+        ),
         url(../images/people-office1-2x.jpg);
     }
   }
@@ -1625,7 +1636,6 @@ textarea {
     font-size: 20px;
     line-height: 1.2;
   }
-
 
   .main-exemples {
     display: block;
@@ -1681,30 +1691,30 @@ textarea {
   }
 
   .filter {
-  padding-top: 96px;
-  padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 120px;
   }
 
   .filter-button {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 72px;
-  max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+    max-width: 100%;
   }
 
   .filter-button .item:not(:last-child) {
-  margin-right: 24px;
+    margin-right: 24px;
   }
 
   .filter-button .button {
-  padding: 12px 24px;
+    padding: 12px 24px;
   }
 
   .filter-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -24px;
-  margin-top: -48px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -24px;
+    margin-top: -48px;
   }
 
   .filter-list .item {
@@ -1714,13 +1724,9 @@ textarea {
   }
 
   .modal {
-    margin-top: 16px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%) scale(1);
   }
 }
-
-
-
-
-
-
-
