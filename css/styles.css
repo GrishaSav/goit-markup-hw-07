@@ -806,16 +806,14 @@ screen and (min-resolution: 2dppx) {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -25%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 
   min-width: 408px;
   min-height: 576px;
   border-radius: 4px;
-  margin-top: 96px;
 
   background-color: var(--modal-background);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
