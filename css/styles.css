@@ -782,6 +782,7 @@ p {
 /* modal */
 
 .backdrop {
+    z-index: 4;
   position: fixed;
   top: 0;
   left: 0;
